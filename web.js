@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   // response.send('Hello World 2!');
   
   // Output from file : readFileSync returns Buffer
-  bufferIndex = fs.readFileSync("index.html");
+  bufferIndex = fs.readFileSync("index.html", "UTF-8");
   response.send(bufferIndex.toString());
 });
 
